@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     :text ="Copyright 2011-2015 Twilio. All rights reserved. Use of this software is subject to the terms and conditions of the Twilio Terms of Service located at http://www.twilio.com/legal/tos"
   }
   s.author       = { "Twilio" => "help@twilio.com" }
-  s.source= { :http    =>  "http://static.twilio.com/sdk/ios/twilioclient-ios-1.2.4.b67-2e7c4e7.tar.bz2"}
+  s.source  = { :http    =>  "http://static.twilio.com/sdk/ios/twilioclient-ios-1.2.4.b67-2e7c4e7.tar.bz2"}
   s.source_files = "Headers/*.h"
   s.public_header_files = "Headers/*.h"
   s.vendored_libraries = "Libraries/libTwilioClient.a"
@@ -21,7 +21,5 @@ Pod::Spec.new do |s|
     "SystemConfiguration"
   ]
   s.requires_arc= true
-  s.xcconfig = {
-    "OTHER_LDFLAGS": "-read_only_relocs suppress"
-  }
+  s.xcconfig              = { 'OTHER_LDFLAGS' => '-read_only_relocs suppress' }
 end
